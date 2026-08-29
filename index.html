@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ПДР — підготовка до теоретичного іспиту</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🚗</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">ПДР<span>тренажер</span></a>
+  <div class="topbar-right">
+    <label class="cat-pick" for="category">Категорія</label>
+    <select class="cat-badge" id="category" title="Категорія прав"></select>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <a href="#/topics" data-route="topics">Вчити по темах</a>
+  <a href="#/exam" data-route="exam">Іспит як в СЦ</a>
+  <a href="#/mistakes" data-route="mistakes">Мої помилки <b class="badge" id="mistakes-badge" hidden>0</b></a>
+  <a href="#/favorites" data-route="favorites">Улюблені <b class="badge fav" id="favorites-badge" hidden>0</b></a>
+  <a href="#/progress" data-route="progress">Прогрес</a>
+  <a href="#/about" data-route="about">Про проєкт</a>
+</nav>
+
+<main id="app" class="wrap">
+  <div class="loading">Завантаження питань…</div>
+</main>
+
+<script src="data/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
